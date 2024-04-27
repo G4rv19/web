@@ -6,17 +6,28 @@
 <title>Profile Page</title>
 <style>
     body {
-        background-color:#6d6875;
-        color: white;
-        font-family: Arial, sans-serif;
-    }
+    background-color:#6d6875;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vh;
+        height: 100%;
+        width: 100%;
     }
+
     .profile-picture {
         width: 200px;
         height: 200px;
@@ -24,6 +35,7 @@
         overflow: hidden;
         margin-bottom: 20px;
     }
+
     .button {
         display: flex;
         align-items: center;
@@ -53,30 +65,45 @@
     .button-icon {
         margin-right: 10px;
     }
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 20px;
+        font-family: "Monospace", monospace;
+    }
 
+    p {
+    color: white;
+    text-align: center;
+    font-family: "Courier New", monospace; /* Changed the font to Courier New */
+    font-size: 30px;
+    }
 </style>
 </head>
 <body>
-<div class="profile-picture">
-        <img src="/static/pfp.png" alt="Profile Picture">
+    <div class="container">
+        <div class="profile-picture">
+            <img src="/static/pfp.png" alt="Profile Picture">
+        </div>
         <p>Garv</p>
+        <a href="https://github.com/G4rv19" class="button">
+            <img src="/static/github.gif" alt="Button 1">
+            My Github ~
+        </a>
+        <a href="https://open.spotify.com/user/31t7eyl56zn3yu6xvrm5eovirowq?si=7359bff3b4f1426b" class="button">
+            <img src="/static/spotify.png" alt="Button 2">
+            My Spotify ~
+        </a>
+        <a href="https://buymeacoffee.com/g4rv" class="button">
+            <img src="/static/coffee.jpeg" alt="Buy me Coffee" class="button-icon">
+            <span style="margin-left: 10px;">Buy me Coffee ~</span>
+        </a>    
+        <a href="https://www.instagram.com/g4r.v/" class="button">
+            <img src="/static/insta.jpeg" alt="Button 4">
+            My Instagram ~
+        </a>
     </div>
-    <a href="https://github.com/G4rv19" class="button">
-        <img src="/static/github.gif" alt="Button 1">
-        My Github ~
-    </a>
-    <a href="https://open.spotify.com/user/31t7eyl56zn3yu6xvrm5eovirowq?si=7359bff3b4f1426b" class="button">
-        <img src="/static/spotify.png" alt="Button 2">
-        My Spotify ~
-    </a>
-    <a href="https://buymeacoffee.com/g4rv" class="button">
-        <img src="/static/coffee.jpeg" alt="Buy me Coffee" class="button-icon">
-        <span style="margin-left: 10px;">Buy me Coffee ~</span>
-    </a>    
-    <a href="https://www.instagram.com/g4r.v/" class="button">
-        <img src="/static/insta.jpeg" alt="Button 4">
-        My Instagram ~
-    </a>
-</div>
 </body>
 </html>
